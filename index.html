@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Image Gallery</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Dynamic Image Gallery</h1>
+        <p>Explore Beautiful Images</p>
+    </header>
+
+    <!-- Search Bar -->
+    <div class="search-container">
+        <input
+            type="text"
+            id="searchInput"
+            placeholder="Search images..."
+        >
+    </div>
+
+    <!-- Category Buttons -->
+    <div class="filter-buttons">
+        <button class="active" data-filter="all">All</button>
+        <button data-filter="nature">Nature</button>
+        <button data-filter="architecture">Architecture</button>
+        <button data-filter="tech">Tech</button>
+    </div>
+
+    <!-- Gallery -->
+    <div class="gallery">
+
+        <!-- Nature -->
+        <div class="gallery-item nature">
+            <img src="images/nature1.jpg" alt="Nature">
+        </div>
+
+        <div class="gallery-item nature">
+            <img src="images/nature2.jpg" alt="Nature">
+        </div>
+
+        <div class="gallery-item nature">
+            <img src="images/nature3.jpg" alt="Nature">
+        </div>
+
+        <!-- Architecture -->
+        <div class="gallery-item architecture">
+            <img src="images/architecture1.jpg" alt="Architecture">
+        </div>
+
+        <div class="gallery-item architecture">
+            <img src="images/architecture2.jpg" alt="Architecture">
+        </div>
+
+        <div class="gallery-item architecture">
+            <img src="images/architecture3.jpg" alt="Architecture">
+        </div>
+
+        <!-- Tech -->
+        <div class="gallery-item tech">
+            <img src="images/tech1.jpg" alt="Technology">
+        </div>
+
+        <div class="gallery-item tech">
+            <img src="images/tech2.jpg" alt="Technology">
+        </div>
+
+        <div class="gallery-item tech">
+            <img src="images/tech3.jpg" alt="Technology">
+        </div>
+
+    </div>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox">
+        <span class="close">&times;</span>
+
+        <img id="lightbox-img" src="" alt="">
+
+    </div>
+
+    <script src="js/script.js"></script>
+
+</body>
+</html>
